@@ -161,11 +161,11 @@
                 }
                 else {
                     var obj = this;
-                    axios.get('https://localhost:44310/api/account/Profile', { headers: authHeader() })
+                    axios.get(process.env.VUE_APP_ROOT_API+'/account/Profile', { headers: authHeader() })
                         .then((response) => {
                             console.log(response.data)
                             obj.profile = response.data;
-                            axios.get('https://localhost:44310/api/sportzbattle/coin-balance')
+                            axios.get(process.env.VUE_APP_ROOT_API+ '/sportzbattle/coin-balance')
                                 .then((response) => {
                                     console.log(response.data)
                                     obj.profile.sportzBattleCoins = response.data.coinBalance;
@@ -182,11 +182,11 @@
             },
              getProfile: function () { 
                 var obj = this;
-                 axios.get('https://localhost:44310/api/account/Profile', { headers: authHeader() })
+                 axios.get(process.env.VUE_APP_ROOT_API+ '/account/Profile', { headers: authHeader() })
                     .then((response) => {
                      console.log(response.data)
                        obj.profile = response.data;
-                      axios.get('https://localhost:44310/api/sportzbattle/coin-balance')
+                      axios.get(process.env.VUE_APP_ROOT_API+ '/sportzbattle/coin-balance')
                          .then((response) => {
                             console.log(response.data)
                             obj.profile.sportzBattleCoins = response.data.coinBalance;
@@ -203,7 +203,7 @@
 
             getSports() {
                 var obj = this;
-                axios.get('https://localhost:44310/api/sportzbattle/ScheduledGames', { headers: authHeader() })
+                axios.get(process.env.VUE_APP_ROOT_API+ '/sportzbattle/ScheduledGames', { headers: authHeader() })
                     .then((response) => {
                         obj.list = response.data;
                         obj.headerImage = obj.list[0].headerImage;
