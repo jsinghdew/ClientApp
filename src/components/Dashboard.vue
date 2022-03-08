@@ -7,8 +7,9 @@
                     <a href=""><img src="../assets/images/logo.png" alt="" /></a>
                 </div>
                 <ul>
-                    <li><a href="">PROFILE</a></li>
-                    <li><a href="">sTORE</a></li>
+                    <li><a href="" @click.prevent="dashboard">Dashboard</a></li>
+                    <li><a href="" @click.prevent="userProfile">PROFILE</a></li> 
+                    <li><a href="" @click.prevent="gameLauncher">Game Launcher</a></li>
                     <li><a href="">CHAT</a></li>
                     <li><a href="">LEADERBOARDS</a></li>
                     <li><a href="">SETTINGS</a></li>
@@ -147,11 +148,6 @@
 <script>
     import { mapActions, mapGetters } from 'vuex';
     export default {
-        beforeCreate() {
-            if (localStorage.getItem('user-info') == null) {
-                this.$router.push({ name: 'Login' });
-            }
-        },
         name: "LoginView",
         data() {
             return {
@@ -163,6 +159,7 @@
                 getUserProfile: "getUserProfile",
             }),
         },
+
         methods: {
             showSignUp() {
                 this.showL = false;
@@ -175,6 +172,12 @@
             logOut() {
                 localStorage.removeItem('user-info')
                 this.$router.push('/');
+            },            
+            dashboard() {                
+                this.$router.push('/Dashboard');
+            },
+            gameLauncher() {
+                this.$router.push('/GameLauncher');
             },
                        
             ...mapActions("auth", {

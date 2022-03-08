@@ -105,7 +105,7 @@
                                 this.showMessageValidation = false;
                                 localStorage.setItem("user-info", res.data.token);
                                 this.showL = false;
-                                this.$router.push({ name: 'Dashboard' });
+                                this.$router.push({ name: 'GameLauncher' });
                             }
                             else {
                                 this.showMessageValidation = true;

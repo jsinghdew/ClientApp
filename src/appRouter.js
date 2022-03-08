@@ -3,6 +3,7 @@ import CreateAccount from "@/components/CreateAccount.vue";
 import ForgotPassword from "@/components/ForgotPassword.vue";
 import Dashboard from "@/components/Dashboard.vue";
 import Login from "@/components/LoginView.vue";
+import GameLauncher from "@/components/GameLauncher.vue";
 //import store from "@/store/index";
  
 const routes =[
@@ -27,6 +28,12 @@ const routes =[
         path: "/Dashboard",
         name: "Dashboard",
         component: Dashboard,
+        meta: { requiredAuth: true }
+    },
+    {
+        path: "/GameLauncher",
+        name: "GameLauncher",
+        component: GameLauncher,
         meta: { requiredAuth: true }
     }
 ];

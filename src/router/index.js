@@ -4,7 +4,7 @@ import ForgotPassword from "@/components/ForgotPassword.vue";
 import Dashboard from "@/components/Dashboard.vue";
 /*import Login from "@/components/LoginView.vue";*/
 import Splash from "@/components/Splash.vue";
-
+import GameLauncher from "@/components/GameLauncher.vue";
 const routes = [
     {
         path: "/",
@@ -25,6 +25,11 @@ const routes = [
         path: "/Dashboard",
         name: "Dashboard",
         component: Dashboard,
+    },
+    {
+        path: "/GameLauncher",
+        name: "GameLauncher",
+        component: GameLauncher,
     }
 ];
 

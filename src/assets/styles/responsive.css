@@ -1,9 +1,31 @@
+@media only screen and (min-width: 1500px) {
+  .container {
+    max-width: 1470px;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .footer {
     left: 300px;
   }
   #mySidebar.active-now + .center_panel .footer {
     left: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1499px) {
+  .play_categories .plays .single_play h4 {
+    font-size: 25px;
+    line-height: 42px;
+    margin-bottom: 55px;
+  }
+  .play_categories .plays .single_play h5 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .play_categories .plays .single_play {
+    padding: 48px 15px;
   }
 }
 
@@ -50,6 +72,21 @@
     font-size: 15px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .play_categories .plays .single_play h4 {
+    font-size: 25px;
+    line-height: 42px;
+    margin-bottom: 55px;
+  }
+  .play_categories .plays .single_play h5 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .play_categories .plays .single_play {
+    padding: 48px 15px;
+  }
+}
 
 @media screen and (max-width: 991px) {
   .inner_profile {
@@ -72,6 +109,10 @@
   }
   .title {
     font-size: 18px;
+  }
+  .play_categories .plays .single_play {
+    height: auto;
+    margin-bottom: 40px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -213,5 +254,43 @@
   }
   a.common_small_btn {
     width: 63px;
+  }
+  .cus_timer {
+    width: 100%;
+  }
+  .play_categories .plays .single_play h4 {
+    font-size: 26px;
+    margin-bottom: 50px;
+  }
+  .play_categories .plays .single_play h5 {
+    margin-bottom: 30px;
+    font-size: 34px;
+    line-height: 42px;
+  }
+  .header_new .header_logo img {
+    max-width: 100px;
+  }
+  .header_new .profile_image_header img.profile_image {
+    height: 50px;
+    width: 50px;
+  }
+  .header_new .profile_image_header {
+    margin-right: 8px;
+  }
+  .header_new .proile_detail_header h4 {
+    font-size: 14px;
+  }
+  .header_new .proile_detail_header p {
+    font-size: 10px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+  }
+  .header_new .proile_detail_header h6 svg,
+  .header_new .proile_detail_header p img {
+    margin-right: 5px;
+    width: 10px;
+  }
+  .header_new .proile_detail_header h6 {
+    font-size: 9px;
   }
 }
