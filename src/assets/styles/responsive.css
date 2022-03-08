@@ -1,0 +1,217 @@
+@media only screen and (min-width: 1200px) {
+  .footer {
+    left: 300px;
+  }
+  #mySidebar.active-now + .center_panel .footer {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .bg_game button {
+    font-size: 14px;
+    padding: 4px 15px;
+  }
+  #mySidebar {
+    margin-left: -300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+  }
+
+  #mySidebar.active-now {
+    margin-left: 0;
+  }
+
+  #mySidebar:after {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000000;
+    content: "";
+    z-index: -1;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+  }
+
+  #mySidebar.active-now:after {
+    opacity: 0.8;
+    left: 300px;
+    visibility: visible;
+  }
+  .login_form {
+    padding: 30px 15px;
+  }
+  .common_btn {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .inner_profile {
+    margin-bottom: 30px;
+  }
+
+  .bg_game.bg-game3 {
+    margin-top: 30px;
+  }
+  .inner_coins .coin_img {
+    max-width: 60px;
+  }
+  .inner_coins .buynow_btn {
+    padding: 11px 17px;
+    font-size: 16px;
+  }
+
+  .inner_coins .value_coins {
+    font-size: 20px;
+  }
+  .title {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main_body {
+    height: unset;
+  }
+
+  .inner_profile > .row.no-gutters > .col-auto {
+    display: inline-block;
+  }
+  .inner_profile {
+    padding: 20px 40px 20px 20px;
+    margin-bottom: 15px;
+  }
+  .edit_image {
+    right: -25px;
+    top: -6px;
+  }
+  .card_profile {
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+  .bg_game {
+    padding: 40px 20px;
+    margin-bottom: 15px;
+  }
+  .tabs.card3 {
+    margin-top: 30px;
+  }
+  .m_20 {
+    margin-top: 0px;
+  }
+  .footer {
+    position: fixed;
+    text-align: center;
+  }
+
+  .center_panel {
+    padding: 30px 15px 80px 19px;
+  }
+
+  .bg_game.bg-game3 {
+    margin-top: 0;
+  }
+
+  .profile_image_div .profile_image {
+    max-width: 60px;
+  }
+
+  .profile_image_div {
+    margin-right: 15px;
+  }
+
+  .proile_detail h4 {
+    font-size: 17px;
+  }
+  .proile_detail p {
+    font-size: 13px;
+  }
+
+  .proile_detail h6 {
+    font-size: 16px;
+  }
+  .proile_detail h6 svg {
+    margin-right: 5px;
+    width: 12px;
+    height: auto;
+  }
+
+  .splash_screen {
+    background-image: url(../images/splash-bg-mob.png);
+    padding-top: 61px;
+    align-items: flex-start;
+  }
+  .breadcrmps h3 {
+    font-size: 18px;
+  }
+
+  .logo_side {
+    height: 200px !important;
+  }
+
+  .logo_side img {
+    width: 200px;
+  }
+
+  .form_side {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid white;
+  }
+  .login_form {
+    padding: 15px;
+  }
+  section.main_section {
+    background: transparent;
+  }
+
+  .back-image {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .outer_sold {
+    min-height: calc(100vh - 190px);
+  }
+  .cus_search {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .chat_sec .outer_chats {
+    padding: 15px 10px;
+  }
+  .chat_sec .inner_chats img.chat_img {
+    width: 55px;
+    margin-right: 7px;
+  }
+  .chat_sec .inner_chats .chat_user_name {
+    font-size: 18px;
+  }
+  .chat_sec .inner_chats .online_user {
+    padding-left: 10px;
+    font-size: 12px;
+  }
+  .chat_sec .inner_chats .online_user::after {
+    top: 4px;
+    height: 5px;
+    width: 5px;
+  }
+  a.common_chat_btn {
+    padding: 14px 10px;
+    font-size: 13px;
+    width: 130px;
+    height: 40px;
+  }
+  a.orange_chat_btn {
+    margin-left: 0px;
+  }
+  a.common_small_btn {
+    width: 63px;
+  }
+}
